@@ -12,7 +12,7 @@ namespace MyGPT
     {
         public static async Task Main(string[] args)
         {
-            OpenAIAPI api = new OpenAIAPI(new APIAuthentication("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"));
+            OpenAIAPI api = new OpenAIAPI(new APIAuthentication("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")); // örnek, çalışmaz
             var chat = api.Chat.CreateConversation();
             chat.Model = Model.ChatGPTTurbo;
             chat.RequestParameters.Temperature = 0;
